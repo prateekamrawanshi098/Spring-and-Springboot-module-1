@@ -1,0 +1,51 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "rtPrKQYWCyarFMzHIP3t4",
+      "type": "text",
+      "x": 436,
+      "y": 106,
+      "width": 686,
+      "height": 1675,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a0",
+      "roundness": null,
+      "seed": 298150251,
+      "version": 1342,
+      "versionNonce": 1088440847,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1794809606228,
+      "link": null,
+      "locked": false,
+      "text": "Creating Multiple Beans in Spring\n=============================\n\nTwo important things to remeber 2 multiple beans :\n\n1. For each bean object we will require a seperate bean object .\n\n2. The id attribute of each bean must have a unique value otherwise\ncontainer will throw BeanDefinitionParsingException .\n\n\n\n\ngetBean(String) returns Object thus casting is required .\n\n\nTo avoid casting we can use two parametrized getBean( id , .class )\n\nIt return the required object type .\n\n\n\nCreating Bean Object of Different Classes\n===================================\n\n-> We can create bean object of different classes also .\n\n-> The only point to remove is that for each bean object which we\nwant IOC container to create , we will have to provide a <bean> tag\nwith its class attribute set to class name .\n\n\n\n\nReference Injection\n==================\n\n\n-> So far we have only injected property values with primitive data .\n\n-> values can also be injected by reference -- one bean definition can\nbe injected into another .\n\n-> To do this , we use ref attribute of <property> tag instead of\nvalue attribute .\n\n< property name = \" prop_name \" ref = \" some_id \" >\n \n\nconclusion rule : \n-> value is for primitive and ref is for Object .\n\nIn Spring XML configuration, we use value to inject literal values and\nref to inject references to other Spring beans.\n\nvalue is used for primitive data types as well as String and other\nliteral values. Although String is an object in Java, we use value\nbecause we are injecting a literal String, not referring to an existing\nSpring bean.\n\nref is used when we want to inject an already configured Spring bean\ninto another bean.\n\n\n\nProblem in Spring-DIEx-3 and Spring-DIEx-4 is that every programmer\nobject  will have same laptop and with same brand .",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Creating Multiple Beans in Spring\n=============================\n\nTwo important things to remeber 2 multiple beans :\n\n1. For each bean object we will require a seperate bean object .\n\n2. The id attribute of each bean must have a unique value otherwise container will throw BeanDefinitionParsingException .\n\n\n\n\ngetBean(String) returns Object thus casting is required .\n\n\nTo avoid casting we can use two parametrized getBean( id , .class )\n\nIt return the required object type .\n\n\n\nCreating Bean Object of Different Classes\n===================================\n\n-> We can create bean object of different classes also .\n\n-> The only point to remove is that for each bean object which we want IOC container to create , we will have to provide a <bean> tag with its class attribute set to class name .\n\n\n\n\nReference Injection\n==================\n\n\n-> So far we have only injected property values with primitive data .\n\n-> values can also be injected by reference -- one bean definition can be injected into another .\n\n-> To do this , we use ref attribute of <property> tag instead of value attribute .\n\n< property name = \" prop_name \" ref = \" some_id \" >\n \n\nconclusion rule : \n-> value is for primitive and ref is for Object .\n\nIn Spring XML configuration, we use value to inject literal values and ref to inject references to other Spring beans.\n\nvalue is used for primitive data types as well as String and other literal values. Although String is an object in Java, we use value because we are injecting a literal String, not referring to an existing Spring bean.\n\nref is used when we want to inject an already configured Spring bean into another bean.\n\n\n\nProblem in Spring-DIEx-3 and Spring-DIEx-4 is that every programmer object  will have same laptop and with same brand .",
+      "autoResize": false,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}

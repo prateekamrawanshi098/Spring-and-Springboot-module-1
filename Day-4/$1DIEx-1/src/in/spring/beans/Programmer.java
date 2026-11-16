@@ -2,7 +2,7 @@ package in.spring.beans;
 
 public class Programmer extends LapTop {
 	public void writeCode() {
-		boolean result = super.startLapto();
+		boolean result = super.startLaptop();
 		if (result) {
 			System.out.println("Coding started");
 

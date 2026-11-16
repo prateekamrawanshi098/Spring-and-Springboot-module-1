@@ -26,7 +26,7 @@
       "version": 534,
       "versionNonce": 1528634833,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1786111949605,
       "link": null,
       "locked": false,
@@ -63,7 +63,7 @@
       "version": 44,
       "versionNonce": 411443551,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1786112068236,
       "link": null,
       "locked": false,
@@ -97,20 +97,20 @@
       "index": "a2",
       "roundness": null,
       "seed": 994990033,
-      "version": 1687,
-      "versionNonce": 1503288447,
+      "version": 1697,
+      "versionNonce": 2068651967,
       "isDeleted": false,
-      "boundElements": null,
-      "updated": 1786116771427,
+      "boundElements": [],
+      "updated": 1794471641510,
       "link": null,
       "locked": false,
-      "text": "1. Resource is a predefined package available in the \npackage org.springframework.core.io .\n\n2. Whenever we need to load any external file like \nxml file, image file etc we use Resource .\n\n3. Several implemetation class of Resource are :\n\n--> ClassPathResource     ~~ file from local system\n--> URLResource            ~~ file from internet\n--> ByteArrayResource \n--> InputStreamResource\n\n4. But from Spring 5 XmlBeanFactory as been depricated \nand Spring 6 as Droped it .\n\n5. To access bean created by container \nBeanFactory has a method called getBean()\nwhich has 5 versions : \n\n1. public Object getBean( String beanName ) \n--> Spring-DIEx-1\n\n2. public T getBean ( Class )  \n\n\n\n\n\n\n\n\n--> Spring-DIEx-2\n\n\n\nSwithching to ApplicationContext\n==============================\n\nAs BeanFactory has been depricated and the modern spring \nuse ApplicationContext Container it is child of BeanFactory\nand it is also an interface \n\nit also has several implementation classes:\n\n1. ClassPathXmlApplicationContext\n--> loads definition of beans from xml file .\n\n2. XmlWebApplicationContext\n--> loads xml with beans definition from within web Application .\n\n3. AnnotationConfigApplicationContext\n--> loads bean definition from .class file .\n\n\n",
+      "text": "1. Resource is a predefined interface available in the \npackage org.springframework.core.io .\n\n2. Whenever we need to load any external file like \nxml file, image file etc we use Resource .\n\n3. Several implemetation class of Resource are :\n\n--> ClassPathResource     ~~ file from local system\n--> URLResource            ~~ file from internet\n--> ByteArrayResource \n--> InputStreamResource\n\n4. But from Spring 5 XmlBeanFactory as been depricated \nand Spring 6 as Droped it .\n\n5. To access bean created by container \nBeanFactory has a method called getBean()\nwhich has 5 versions : \n\n1. public Object getBean( String beanName ) \n--> Spring-DIEx-1\n\n2. public T getBean ( Class )  \n\n\n\n\n\n\n\n\n--> Spring-DIEx-2\n\n\n\nSwithching to ApplicationContext\n==============================\n\nAs BeanFactory has been depricated and the modern spring \nuse ApplicationContext Container it is child of BeanFactory\nand it is also an interface \n\nit also has several implementation classes:\n\n1. ClassPathXmlApplicationContext\n--> loads definition of beans from xml file .\n\n2. XmlWebApplicationContext\n--> loads xml with beans definition from within web Application .\n\n3. AnnotationConfigApplicationContext\n--> loads bean definition from .class file .\n\n\n",
       "fontSize": 20,
       "fontFamily": 5,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "1. Resource is a predefined package available in the \npackage org.springframework.core.io .\n\n2. Whenever we need to load any external file like \nxml file, image file etc we use Resource .\n\n3. Several implemetation class of Resource are :\n\n--> ClassPathResource     ~~ file from local system\n--> URLResource            ~~ file from internet\n--> ByteArrayResource \n--> InputStreamResource\n\n4. But from Spring 5 XmlBeanFactory as been depricated \nand Spring 6 as Droped it .\n\n5. To access bean created by container \nBeanFactory has a method called getBean()\nwhich has 5 versions : \n\n1. public Object getBean( String beanName ) \n--> Spring-DIEx-1\n\n2. public T getBean ( Class )  \n\n\n\n\n\n\n\n\n--> Spring-DIEx-2\n\n\n\nSwithching to ApplicationContext\n==============================\n\nAs BeanFactory has been depricated and the modern spring \nuse ApplicationContext Container it is child of BeanFactory\nand it is also an interface \n\nit also has several implementation classes:\n\n1. ClassPathXmlApplicationContext\n--> loads definition of beans from xml file .\n\n2. XmlWebApplicationContext\n--> loads xml with beans definition from within web Application .\n\n3. AnnotationConfigApplicationContext\n--> loads bean definition from .class file .\n\n\n",
+      "originalText": "1. Resource is a predefined interface available in the \npackage org.springframework.core.io .\n\n2. Whenever we need to load any external file like \nxml file, image file etc we use Resource .\n\n3. Several implemetation class of Resource are :\n\n--> ClassPathResource     ~~ file from local system\n--> URLResource            ~~ file from internet\n--> ByteArrayResource \n--> InputStreamResource\n\n4. But from Spring 5 XmlBeanFactory as been depricated \nand Spring 6 as Droped it .\n\n5. To access bean created by container \nBeanFactory has a method called getBean()\nwhich has 5 versions : \n\n1. public Object getBean( String beanName ) \n--> Spring-DIEx-1\n\n2. public T getBean ( Class )  \n\n\n\n\n\n\n\n\n--> Spring-DIEx-2\n\n\n\nSwithching to ApplicationContext\n==============================\n\nAs BeanFactory has been depricated and the modern spring \nuse ApplicationContext Container it is child of BeanFactory\nand it is also an interface \n\nit also has several implementation classes:\n\n1. ClassPathXmlApplicationContext\n--> loads definition of beans from xml file .\n\n2. XmlWebApplicationContext\n--> loads xml with beans definition from within web Application .\n\n3. AnnotationConfigApplicationContext\n--> loads bean definition from .class file .\n\n\n",
       "autoResize": true,
       "lineHeight": 1.25
     },
@@ -137,7 +137,7 @@
       "version": 28,
       "versionNonce": 1742915999,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1786116029530,
       "link": null,
       "locked": false,
@@ -174,7 +174,7 @@
       "version": 72,
       "versionNonce": 1112979825,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1786116063561,
       "link": null,
       "locked": false,
@@ -466,10 +466,7 @@
       ],
       "pressures": [],
       "simulatePressure": true,
-      "lastCommittedPoint": [
-        74,
-        20
-      ]
+      "lastCommittedPoint": null
     },
     {
       "id": "kI_iWBCMaDZH0UJoUjCG4",
@@ -494,7 +491,7 @@
       "version": 16,
       "versionNonce": 237864767,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1786116065592,
       "link": null,
       "locked": false,
@@ -562,10 +559,7 @@
       ],
       "pressures": [],
       "simulatePressure": true,
-      "lastCommittedPoint": [
-        -4,
-        14
-      ]
+      "lastCommittedPoint": null
     },
     {
       "id": "JzIqurxR043ryGTwNUJnH",
@@ -590,7 +584,7 @@
       "version": 20,
       "versionNonce": 129462481,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1786116067388,
       "link": null,
       "locked": false,
@@ -674,10 +668,7 @@
       ],
       "pressures": [],
       "simulatePressure": true,
-      "lastCommittedPoint": [
-        19,
-        8
-      ]
+      "lastCommittedPoint": null
     },
     {
       "id": "bzWSIIapOy2zJwax1gT8n",
@@ -702,7 +693,7 @@
       "version": 16,
       "versionNonce": 352872849,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1786116318074,
       "link": null,
       "locked": false,
@@ -766,10 +757,7 @@
       ],
       "pressures": [],
       "simulatePressure": true,
-      "lastCommittedPoint": [
-        -1,
-        28
-      ]
+      "lastCommittedPoint": null
     },
     {
       "id": "QNGgSrGY9VLz_borYVXrP",
@@ -794,7 +782,7 @@
       "version": 31,
       "versionNonce": 815149937,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1786116119696,
       "link": null,
       "locked": false,
@@ -922,10 +910,7 @@
       ],
       "pressures": [],
       "simulatePressure": true,
-      "lastCommittedPoint": [
-        15,
-        -2
-      ]
+      "lastCommittedPoint": null
     },
     {
       "id": "2y7Xchbk2BLfFhZjjofjS",
@@ -947,20 +932,20 @@
       "index": "aC",
       "roundness": null,
       "seed": 882859071,
-      "version": 225,
-      "versionNonce": 1288220465,
+      "version": 240,
+      "versionNonce": 1543414495,
       "isDeleted": false,
-      "boundElements": null,
-      "updated": 1786116222466,
+      "boundElements": [],
+      "updated": 1794579197806,
       "link": null,
       "locked": false,
-      "text": "GenericType ( Automatically convert return type into \n                   .class provide and hence we don't \n                   to do type casting .\n                )",
+      "text": "GenericType ( Automatically convert return type into \n                  .class provide and hence we don't need \n                  to do type casting .\n                )",
       "fontSize": 20,
       "fontFamily": 5,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "GenericType ( Automatically convert return type into \n                   .class provide and hence we don't \n                   to do type casting .\n                )",
+      "originalText": "GenericType ( Automatically convert return type into \n                  .class provide and hence we don't need \n                  to do type casting .\n                )",
       "autoResize": true,
       "lineHeight": 1.25
     },
@@ -987,7 +972,7 @@
       "version": 1710,
       "versionNonce": 1690086673,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1786126396501,
       "link": null,
       "locked": false,
@@ -1026,7 +1011,7 @@
       "version": 226,
       "versionNonce": 1463651071,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1786126388184,
       "link": null,
       "locked": false,
@@ -1071,7 +1056,7 @@
       "version": 69,
       "versionNonce": 852512113,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1786126310095,
       "link": null,
       "locked": false,
@@ -1159,7 +1144,7 @@
       "version": 175,
       "versionNonce": 94309407,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1786126404801,
       "link": null,
       "locked": false

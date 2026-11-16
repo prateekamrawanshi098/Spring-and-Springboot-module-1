@@ -4,7 +4,7 @@ public class Programmer {
 	private LapTop lp = new LapTop();
 
 	public void writeCode() {
-		boolean result = lp.startLapto();
+		boolean result = lp.startLaptop();
 		if (result) {
 			System.out.println("Coding started");
 
