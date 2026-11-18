@@ -1,0 +1,51 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "w1Tjc3E6yEDLFPfBj-t3e",
+      "type": "text",
+      "x": 96,
+      "y": 131,
+      "width": 689,
+      "height": 825,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a0",
+      "roundness": null,
+      "seed": 1227423214,
+      "version": 1420,
+      "versionNonce": 2054136336,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1794982912332,
+      "link": null,
+      "locked": false,
+      "text": "-> Singleton Bean is eagerly created .\n\n-> Whereas prototype bean is lazily created . --> $1BeanScope-Ex-02\n\n-> But if prototype bean is set as dependency inside a singleton\nbean  it is also eagrly created when the container start ..\n --> $1BeanScope-Ex-03\n\n-> Spring first resolve constructor-arg before calling constructor .\n\n-> Singleton scope bean should be used for staeless beans .\n\n-> Prototype scope is used for all beans that are stateful beans .\n\n-> stateless bean refers to a bean that does not maintain any\ninternal state between method calls .\n\n-> Means instance is either has no property/instance variable or if it\nhas property than it is not changing for multiple objects .\n\n\nWhy spring bean is singleton by default \n------------------------------------------------\n\n-> To avaoid OutOfMemoryError and save memory .\n\n-> When a bean is singleton, only one shared instance of bean will be\nmanaged and all requests for that bean result in that one specific\nbean instance being returned .\n\n\n-> If we want instance to be singleton but intialized lazily than we\ncan use attribute lazy-init=\"true\"   --> $4BeanScope-Ex-04",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "-> Singleton Bean is eagerly created .\n\n-> Whereas prototype bean is lazily created . --> $1BeanScope-Ex-02\n\n-> But if prototype bean is set as dependency inside a singleton bean  it is also eagrly created when the container start ..\n --> $1BeanScope-Ex-03\n\n-> Spring first resolve constructor-arg before calling constructor .\n\n-> Singleton scope bean should be used for staeless beans .\n\n-> Prototype scope is used for all beans that are stateful beans .\n\n-> stateless bean refers to a bean that does not maintain any internal state between method calls .\n\n-> Means instance is either has no property/instance variable or if it has property than it is not changing for multiple objects .\n\n\nWhy spring bean is singleton by default \n------------------------------------------------\n\n-> To avaoid OutOfMemoryError and save memory .\n\n-> When a bean is singleton, only one shared instance of bean will be managed and all requests for that bean result in that one specific bean instance being returned .\n\n\n-> If we want instance to be singleton but intialized lazily than we can use attribute lazy-init=\"true\"   --> $4BeanScope-Ex-04",
+      "autoResize": false,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
